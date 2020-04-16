@@ -5,6 +5,7 @@
     <title>Demo 1.99</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="style.css">
   </head>
 
@@ -26,28 +27,28 @@
                 </div>
                 <div class="author">
                   <span class="name header header-lv4--md clamp-1">CTWANT</span>
-                  <span class="updatedTime text-sm grayLighten12 clamp-1">3 小時前&nbsp;&#8226;&nbsp;王奕棋</span>
+                  <span class="updatedTime textBody-sm grayLighten12 clamp-1">3 小時前&nbsp;&#8226;&nbsp;王奕棋</span>
                 </div>
               </div>
             </a>
             <div class="controller">
-              <button href="#">關注</button>
+              <button class="textButton-md">關注</button>
             </div>
           </div>
         </header>
 
         <!-- item prop article-body -->
-        <div class="article-body">
+        <div class="moduleWrap article-body">
           <figure>
             <img src="https://obs.line-scdn.net/0heCuSFzbfOmxIKhKcuS5FO3J8OQN7RilvLBxrbwtEZFgxEnttJkh3AmstZ1owTX0yIU11DWwrIV02T3g5dkl3/w644" alt="">
-            <figcaption class="text-lg grayNormal">理科太太上傳新片。（圖／翻攝自理科太太YouTube）</figcaption>
+            <figcaption class="textBody-lg grayNormal">理科太太上傳新片。（圖／翻攝自理科太太YouTube）</figcaption>
           </figure>
 
           <p>網紅「理科太太」去年11月底無預警宣布先生罹患憂鬱症，身為照顧者的她也因此自律神經失調，無法創作出好的劇本，因此宣布頻道暫停更新。經過數月的休養調整，理科太太近日上傳一支親做濾網口罩的影片，並宣布即將在5月捲土重來。</p>
 
           <figure>
             <img src="https://obs.line-scdn.net/0hz-_AKOaXJQJiOA3ykzxaVVhuJm1RVDYBBg50ASFWezYbAGQDDFpobEE5cjpKXGJcC19qYEE-PjMcXWdXXFto/w644" alt="">
-            <figcaption class="text-lg grayNormal">理科太太即將回歸。（圖／翻攝自理科太太YouTube）</figcaption>
+            <figcaption class="textBody-lg grayNormal">理科太太即將回歸。（圖／翻攝自理科太太YouTube）</figcaption>
           </figure>
 
           <!-- Do not leave spacing if ad no show -->
@@ -69,13 +70,36 @@
           <h2>延伸閱讀</h2>
           <ul>
             <li>
-              <a href="https://www.ctwant.com/article/46155?utm_source=linetoday&amp;utm_medium=rss&amp;utm_campaign=46186" target="_blank">徐小可阿Ben夫妻同時「身體發炎」　竟是「兩天做一次」這習慣害的！</a>
+              <a href="https://www.ctwant.com/article/46155?utm_source=linetoday&amp;utm_medium=rss&amp;utm_campaign=46186" target="_blank">徐小可阿Ben夫妻同時「身體發炎」　竟是這習慣害的！</a>
             </li>
             <li>
               <a href="https://www.ctwant.com/article/46194?utm_source=linetoday&amp;utm_medium=rss&amp;utm_campaign=46186" target="_blank">陳時中記者會戴口罩…但「他」卻不用戴？　手語翻譯員釋疑</a>
             </li>
           </ul>
         </div>
+
+        <!-- related -->
+        <div class="moduleWrap">
+          查看原始文章
+        </div>
+
+        <div class="moduleWrap">
+          <div class="adSlot">
+            <span class="warning">廣告 - 請繼續往下閱讀</span>
+            <img src="https://tpc.googlesyndication.com/daca_images/simgad/13979106059430306674" alt="">
+          </div>
+        </div>
+
+        <div class="moduleWrap">
+          <div class="moduleWrap-panel">
+            <div class="moduleWrap-panel--header"><div data-v-8d6688ba="" data-v-4d9270e6="" class="glnModuleHeader" data-v-6f4c7a21=""><div data-v-8d6688ba="" class="glnModuleHeader-wrap"><h2 data-v-1e2e1f04="" data-v-8d6688ba="" class="glnModuleHeader-title header header--secondMD header--greyDarken34">
+              娛樂八卦站
+            </h2> <span data-v-381ed5e8="" data-v-8d6688ba="" class="theIcon glnModuleHeader-icon" style="color: rgb(41, 41, 41); font-size: 28px;"><svg data-v-381ed5e8="" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"><path fill="currentColor" fill-rule="evenodd" d="M12.41 7.7l5.832 5.833c.376.376.408.966.094 1.378l-.094.107-5.833 5.834-1.485-1.485 5.09-5.091-5.09-5.091L12.41 7.7z"></path></svg></span></div> <!----></div></div>
+            查看原始文章
+          </div>
+        </div>
+
+
       </article>
     </div>
 
@@ -86,14 +110,14 @@
           <span class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M3.585 4.73c2.052-2.06 5.343-2.118 7.467-.176l.184.176.764.768.764-.768c2.113-2.12 5.539-2.12 7.651 0 2.053 2.06 2.111 5.364.176 7.494l-.176.185L12 20.856 3.585 12.41c-2.113-2.12-2.113-5.558 0-7.679zM19.14 6c-1.359-1.363-3.53-1.412-4.946-.145L14.04 6 12 8.048 9.96 6C8.552 4.586 6.27 4.586 4.86 6c-1.363 1.367-1.411 3.557-.146 4.983l.146.155 7.139 7.166 7.141-7.166c1.363-1.368 1.411-3.557.146-4.983l-.146-.155z"/></svg>
           </span>
-          <span class="count text-md">62</span>
+          <span class="count textButton-lg">62</span>
         </button>
         <!-- comment -->
         <button class="chip chip--text">
           <span class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M12.11 2.5c6.114 0 9.39 3.612 9.39 8.07 0 4.455-3.431 8.067-7.6 8.067l-2.85.011c-2.405 0-3.23 2.852-3.23 2.852l-.196-.163c-.96-.82-5.124-4.652-5.124-9.456C2.5 6.449 5.997 2.5 12.11 2.5zm0 1.8c-4.919 0-7.81 2.94-7.81 7.58 0 1.92.845 3.878 2.286 5.748.209.272.425.533.644.784l.171.188.115-.133c.848-.94 1.943-1.545 3.28-1.613l.253-.006 2.42-.01h.431c3.16 0 5.8-2.795 5.8-6.269 0-3.724-2.76-6.269-7.59-6.269z"/></svg>
           </span>
-          <span class="count text-md">97</span>
+          <span class="count textButton-lg">97</span>
         </button>
       </div>
       <div class="right">

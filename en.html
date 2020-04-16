@@ -5,6 +5,7 @@
     <title>Demo 1.99</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="style.css">
   </head>
 
@@ -26,23 +27,23 @@
                 </div>
                 <div class="author">
                   <span class="name header header-lv4--md clamp-1">South China Morning Post</span>
-                  <span class="updatedTime text-sm grayLighten12 clamp-1">8 hours ago • Roxanne Dowell</span>
+                  <span class="updatedTime textBody-sm grayLighten12 clamp-1">8 hours ago • Roxanne Dowell</span>
                 </div>
               </div>
             </a>
             <div class="controller">
-              <button href="#">Subscribe</button>
+              <button class="textButton-md">Subscribe</button>
             </div>
           </div>
         </header>
 
         <!-- item prop article-body -->
-        <div class="article-body">
+        <div class="moduleWrap article-body">
           <p>The coronavirus has kept them out of the public eye for now, but where will Archie go to school and what did US President Donald Trump recently tweet about them</p>
 
           <figure>
             <img src="https://obs.line-scdn.net/0hODiqBfjWEGtUCDiaA6RvPG5eEwRnZANoMD5BdAtmTl8tMFA5ODkMXnhfSVt_PFc1OmZWD3YPC1oqbVQ0aDoM/w644" alt="">
-            <figcaption class="text-lg grayNormal">Harry and Meghan starting out on their new life in North America. Photo: @sussexroyal/Instagram</figcaption>
+            <figcaption class="textBody-lg grayNormal">Harry and Meghan starting out on their new life in North America. Photo: @sussexroyal/Instagram</figcaption>
           </figure>
 
           <p>The royal gasp was heard around the world when Meghan Markle and Prince Harry announced they were taking a "step back" from the British royal family in January 2020 and would instead spend their time in North America. Although many presumed they would make Canada their future home " they had been staying with their son, Archie Harrison Mountbatten-Windsor, on Vancouver Island " the royal couple has instead decided to settle in California.</p>
@@ -55,7 +56,7 @@
 
           <figure>
             <img src="https://obs.line-scdn.net/0hByW5AqxbHVZqTDWnPeJiAVAaHjlZIA5VDnpMSTUiQ2ITdF0EBn1aY0YbRmROeFoIBCJbMk5KBmcUKVkJVn5a/w644" alt="">
-            <figcaption class="text-lg grayNormal">The gated neighbourhood where Harry and Meghan are looking to establish their residence, Serra Retreat in Malibu, California. Photo: AFP</figcaption>
+            <figcaption class="textBody-lg grayNormal">The gated neighbourhood where Harry and Meghan are looking to establish their residence, Serra Retreat in Malibu, California. Photo: AFP</figcaption>
           </figure>
 
           <p>Now that their monarchical ties have been cut (the official change of status started on March 31), what will life be like for the Sussexes in the City of Light? Here's what we know about what they've been up to since their move.</p>
@@ -68,7 +69,7 @@
 
           <figure>
             <img src="https://obs.line-scdn.net/0hrp8wFZOqLV8FDgWuUqZSCD9YLjA2Yj5cYTh8QFpgc2t8Nm0NaT81aikPdD0hNmoBa2BrPCYKNm57a2kAOTw1/w644" alt="">
-            <figcaption class="text-lg grayNormal">The couple are rumoured to be hunkering down at a compound in Malibu, the exclusive beach community outside Los Angeles. Photo: AFP</figcaption>
+            <figcaption class="textBody-lg grayNormal">The couple are rumoured to be hunkering down at a compound in Malibu, the exclusive beach community outside Los Angeles. Photo: AFP</figcaption>
           </figure>
 
           <!-- Do not leave spacing if ad no show -->
@@ -77,6 +78,8 @@
             <img src="https://tpc.googlesyndication.com/daca_images/simgad/13979106059430306674" alt="">
           </div>
         </div>
+
+        <!-- 待會貼這裡 -->
       </article>
     </div>
 
@@ -87,14 +90,14 @@
           <span class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M3.585 4.73c2.052-2.06 5.343-2.118 7.467-.176l.184.176.764.768.764-.768c2.113-2.12 5.539-2.12 7.651 0 2.053 2.06 2.111 5.364.176 7.494l-.176.185L12 20.856 3.585 12.41c-2.113-2.12-2.113-5.558 0-7.679zM19.14 6c-1.359-1.363-3.53-1.412-4.946-.145L14.04 6 12 8.048 9.96 6C8.552 4.586 6.27 4.586 4.86 6c-1.363 1.367-1.411 3.557-.146 4.983l.146.155 7.139 7.166 7.141-7.166c1.363-1.368 1.411-3.557.146-4.983l-.146-.155z"/></svg>
           </span>
-          <span class="count text-md">62</span>
+          <span class="count textButton-lg">62</span>
         </button>
         <!-- comment -->
         <button class="chip chip--text">
           <span class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M12.11 2.5c6.114 0 9.39 3.612 9.39 8.07 0 4.455-3.431 8.067-7.6 8.067l-2.85.011c-2.405 0-3.23 2.852-3.23 2.852l-.196-.163c-.96-.82-5.124-4.652-5.124-9.456C2.5 6.449 5.997 2.5 12.11 2.5zm0 1.8c-4.919 0-7.81 2.94-7.81 7.58 0 1.92.845 3.878 2.286 5.748.209.272.425.533.644.784l.171.188.115-.133c.848-.94 1.943-1.545 3.28-1.613l.253-.006 2.42-.01h.431c3.16 0 5.8-2.795 5.8-6.269 0-3.724-2.76-6.269-7.59-6.269z"/></svg>
           </span>
-          <span class="count text-md">97</span>
+          <span class="count textButton-lg">97</span>
         </button>
       </div>
       <div class="right">

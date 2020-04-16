@@ -1,118 +1,3 @@
-*,
-::after,
-::before{
-  box-sizing:border-box
-}
-
-body {
-  max-width: 768px;
-  margin: 0 auto;
-  font-family: -apple-system, Segoe UI, Roboto, Microsoft JhengHei, Helvetica Neue, Helvetica, Arial, sans-serif; /*BlinkMacSystemFont */
-  color: #292929;
-  background: #eee;
-}
-
-
-
-/******************** foundation ********************/
-.header {
-  font-weight: 700;
-}
-
-.header-lv1--md {
-  font-size: 26px;
-  line-height: 34px;
-}
-@media (min-width: 768px) {
-  .header-lv1--md {
-    font-size: 32px;
-    line-height: 46px;
-  }
-}
-
-.header-lv4--md {
-  font-size: 13px;
-  line-height: 20px;
-}
-@media (min-width: 768px) {
-  .header-lv4--md {
-    font-size: 15px;
-    line-height: 22px;
-  }
-}
-
-.text-lg {
-  font-size: 15px;
-  line-height: 22px;
-}
-
-.text-md {
-  font-size: 13px;
-  line-height: 20px;
-}
-
-.text-sm {
-  font-size: 12px;
-  line-height: 18px;
-}
-@media (min-width: 768px) {
-  .text-sm {
-    font-size: 13px;
-    line-height: 20px;
-  }
-}
-
-.grayNormal {color: #808080;}
-.grayLighten12 {color: #9f9f9f;}
-
-article p {
-  margin-bottom: 12px;
-  font-size: 18px;
-  line-height: 30px;
-}
-
-/* HMW: iOS 500, Android 600 */
-article p b {
-  font-weight: 700;
-}
-
-
-
-/******************** common ********************/
-button:focus{
-  outline: 0;
-}
-
-a:link, a:visited, a:hover, a:active {
-  color: inherit;
-  text-decoration: none;
-}
-
-.clamp-1 {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  overflow: hidden;
-}
-
-@media (max-width: 767px) {
-  .pcOnly {
-    display: none !important;
-  }
-}
-
-.universalFrame-wrap {
-  max-width: 768px;
-  min-width: 320px;
-  min-height: calc(100vh - 110px);
-  margin: 0 auto;
-  background: #f5f5f5;
-  box-shadow: -1px 0 0 0 #eee, 1px 0 0 0 #eee;
-}
-
-
-
-/******************** header ********************/
 #header {
   position: fixed;
   top: 0;
@@ -233,10 +118,9 @@ structure
 
 .article-header--provider .controller button {
   min-width: 72px;
-  padding: 4px 16px;
+  height: 32px;
+  padding: 4px 12px;
   margin-left: 16px;
-  font-size: 13px;
-  line-height: 22px;
   color: #fff;
   text-align: center;
   background: #457ed7;
@@ -248,11 +132,11 @@ structure
 
 /******************** article body ********************/
 .universalFrame-wrap article .article-body {
-  padding: 0 16px 16px;
+  padding-top: 0;
 }
 @media (min-width: 768px) {
   .universalFrame-wrap article .article-body {
-    padding: 0 32px 24px;
+    padding-top: 0;
   }
 }
 
@@ -281,7 +165,7 @@ structure
 }
 
 
-.article-body .adSlot {
+article .adSlot {
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
@@ -295,19 +179,19 @@ structure
 }
 
 @media (min-width: 768px) {
-  .article-body .adSlot {
+  article .adSlot {
     margin-right: 0;
     margin-left: 0;
     border-radius: 4px;
   }
 }
 
-.article-body .adSlot img {
+article .adSlot img {
   max-width: 300px;
   height: auto;
 }
 
-.article-body .adSlot .warning {
+article .adSlot .warning {
   margin-bottom: 8px;
   font-size: 13px;
   line-height: 20px;
@@ -315,30 +199,46 @@ structure
 }
 
 /* Adjust top spacing if article start with figure */
-.article-body figure:first-child {
+article figure:first-child {
   padding-top: 0;
 }
 
 /* Adjust top spacing if figure right after p */
-.article-body p + figure {
+article p + figure {
   padding-top: 12px;
 }
 
 /* Adjust top spacing if figure right after ad on mobile */
-.article-body .adSlot + figure {
+article .adSlot + figure {
   padding-top: 0;
   margin-top: -24px;
 }
 @media (min-width: 768px) {
-  .article-body .adSlot + figure {
+  article .adSlot + figure {
     padding-top: 0;
     margin-top: inherit;
   }
 }
 
 /* Adjust top spacing if ad right after figure */
-.article-body figure + .adSlot {
+article figure + .adSlot {
   margin-top: 0;
+}
+
+/* Adjust top spacing if ad in module wrap */
+.moduleWrap .adSlot {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+
+/******************** article fotoer ********************/
+.moduleWrap-panel {
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 8px 0 rgba(0,0,0,.04);
+  box-shadow: 0 0 8px 0 rgba(0,0,0,.04);
+  background-color: #fff;
 }
 
 
@@ -407,7 +307,6 @@ structure
 #floating .chip span {
   display: -webkit-inline-box;
   display: inline-flex;
-  font-weight: 700;
 }
 
 #floating .chip span:nth-child(2) {
