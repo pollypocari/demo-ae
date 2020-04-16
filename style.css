@@ -3,7 +3,7 @@
   top: 0;
   width: 100%;
   max-width: 768px;
-  height: 44px;
+  height: 48px;
   background: #fff;
   -webkit-transition: top .5s ease;
   transition: top .5s ease;
@@ -16,6 +16,52 @@
   width: 100%;
   height: 1px;
   background: rgba(0,0,0,.1);
+}
+
+#header {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: space-between;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+
+#header .left {
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+
+#header .title {
+  position: absolute;
+  display: -webkit-box;
+  display: flex;
+  width: calc(100% - 10px);
+  height: 48px;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#header .right {
+  -webkit-box-direction: normal;
+  flex-direction: column;
+
+}
+
+#header .ic {
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 38px;
+  height: 48px;
 }
 
 
@@ -33,12 +79,12 @@ structure
 */
 
 .universalFrame-wrap article .article-header {
-  padding: calc(44px + 16px) 16px 16px;
+  padding: calc(48px + 16px) 16px 16px;
   background: linear-gradient(0deg, rgba(245,245,245,1) 0%, rgba(255,255,255,1) 70%, rgba(255,255,255,1) 100%);
 }
 @media (min-width: 768px) {
   .universalFrame-wrap article .article-header {
-    padding: calc(44px + 24px) 32px 24px;
+    padding: calc(48px + 24px) 32px 24px;
   }
 }
 
@@ -164,8 +210,33 @@ structure
   margin-right: 2px;
 }
 
+.article-body .source {
+  text-align: center;
+}
 
-article .adSlot {
+.article-body .source .btn {
+  display: -webkit-inline-box;
+  display: inline-flex;
+  height: 40px;
+  padding: 0 16px;
+  color:#292929 !important;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+.article-body .source .btn span {
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.article-body .source .btn span:first-child {
+  margin-right: 4px;
+}
+
+
+.adSlot {
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
@@ -173,25 +244,25 @@ article .adSlot {
   flex-direction: column;
   -webkit-box-align: center;
   align-items: center;
-  padding: 16px 0;
+  padding: 20px 0 30px;
   margin: 24px -16px;
   background: #eee;
 }
 
 @media (min-width: 768px) {
-  article .adSlot {
+  .adSlot {
     margin-right: 0;
     margin-left: 0;
     border-radius: 4px;
   }
 }
 
-article .adSlot img {
+.adSlot img {
   max-width: 300px;
   height: auto;
 }
 
-article .adSlot .warning {
+.adSlot .warning {
   margin-bottom: 8px;
   font-size: 13px;
   line-height: 20px;
@@ -199,34 +270,40 @@ article .adSlot .warning {
 }
 
 /* Adjust top spacing if article start with figure */
-article figure:first-child {
+.article-body figure:first-child {
   padding-top: 0;
 }
 
 /* Adjust top spacing if figure right after p */
-article p + figure {
-  padding-top: 12px;
+.article-body p + figure {
+  padding-top: 0;
+}
+
+/* Adjust top spacing if figure right after figure */
+.article-body figure + figure {
+  padding-top: 0;
 }
 
 /* Adjust top spacing if figure right after ad on mobile */
-article .adSlot + figure {
+.article-body .adSlot + figure {
   padding-top: 0;
   margin-top: -24px;
 }
 @media (min-width: 768px) {
-  article .adSlot + figure {
+  .article-body .adSlot + figure {
     padding-top: 0;
     margin-top: inherit;
   }
 }
 
 /* Adjust top spacing if ad right after figure */
-article figure + .adSlot {
+.article-body figure + .adSlot {
   margin-top: 0;
 }
 
 /* Adjust top spacing if ad in module wrap */
-.moduleWrap .adSlot {
+/* workaround */
+.article-footer .adSlot {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -257,6 +334,7 @@ article figure + .adSlot {
   height: 52px;
   margin: 0 16px;
   padding: 0 8px;
+  /* background: linear-gradient(111deg, #4e73cc, #40b6ff 100%); */
   background: #fff;
   border-radius: 100px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,.1);
