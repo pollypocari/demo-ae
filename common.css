@@ -92,7 +92,8 @@ body {
   line-height: 30px;
 }
 
-.article-body p {
+.article-body p,
+.article-body ul {
   margin-bottom: 24px;
 }
 
