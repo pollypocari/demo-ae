@@ -23,7 +23,7 @@
   display: flex;
   -webkit-box-pack: space-between;
   justify-content: space-between;
-  padding: 0 5px;
+  /* padding: 0 5px; */
 }
 
 #header .left {
@@ -311,6 +311,9 @@ structure
 
 
 /******************** article fotoer ********************/
+.article-footer {
+  padding-bottom: 300px;
+}
 .moduleWrap-panel {
   border-radius: 4px;
   -webkit-box-shadow: 0 0 8px 0 rgba(0,0,0,.04);
