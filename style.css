@@ -123,6 +123,10 @@ structure
   display: flex;
   -webkit-box-flex: 1;
   flex-grow: 1;
+  -webkit-box-pack: stretch;
+  justify-content: stretch;
+  justify-content-align-items: stretch;
+  justify-content-align-content: stretch;
 }
 
 .article-header--provider .avatar {
@@ -158,14 +162,13 @@ structure
 .article-header--provider .controller {
   display: -webkit-box;
   display: flex;
-  -webkit-box-align: center;
-  align-items: center;
 }
 
 .article-header--provider .controller button {
   min-width: 72px;
   height: 32px;
   padding: 4px 12px;
+  margin-top: 8px;
   margin-left: 16px;
   color: #fff;
   text-align: center;
